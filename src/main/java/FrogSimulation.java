@@ -19,7 +19,7 @@ public class FrogSimulation
 		int pos = 0;
 		int hopsTaken = 0;
 		while(pos >= 0 && pos < goalDistance && hopsTaken < maxHops) {
-			pos += this.hopDistance();
+			pos += hopDistance();
 			hopsTaken++;
 		}
 		if(pos >= goalDistance) {
@@ -34,7 +34,7 @@ public class FrogSimulation
 		/* to be implemented in part (b) */ 
 		double successfulSims = 0;
 		for(int i = 0; i < num; i++) {
-			if(this.simulate() == true) {
+			if(simulate() == true) {
 				successfulSims++;
 			}
 		}
