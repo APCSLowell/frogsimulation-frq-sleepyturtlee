@@ -21,9 +21,9 @@ public class FrogSimulation
 		while(pos >= 0 && pos < goalDistance && hopsTaken < maxHops) {
 			pos += this.hopDistance();
 			hopsTaken++;
-			if(pos >= goalDistance) {
-				return true;
-			}
+		}
+		if(pos >= goalDistance) {
+			return true;
 		}
 		return false;
 
